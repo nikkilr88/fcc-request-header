@@ -26,3 +26,7 @@ p a {
     color: #292b2c;
     border-bottom: 1px dotted #292b2c;
 }
+
+p a:hover {
+    text-decoration: none;
+}
