@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <h1 class="mb-5 text-center">What's My IP?</h1>
+            
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    
+                    <div class="card card-success text-center">
+                        <div class="card-block">
+                            Your IP address is:<br> <h4><%= ip %></h4>
+                        </div>
+                    </div>
+                    
+                    <p class="mb-5 text-center"><small>*Learn more about <a href="https://support.google.com/websearch/answer/1696588">IP addresses</a></small></p>
+                    
+                    <div class="card mb-1">
+                        <div class="card-block">
+                            <strong>ISP:</strong> <%= data.owner %>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-1">
+                        <div class="card-block">
+                            <strong>Browser:</strong> <%= ua.browser.name %> <%= ua.browser.version %>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-1">
+                        <div class="card-block">
+                            <strong>Engine:</strong> <%= ua.engine.name %> <%= ua.engine.version %>
+                        </div>
+                    </div>
+                        
+                    <div class="card">
+                        <div class="card-block">
+                            <strong>OS:</strong> <%= ua.os.name %> <%= ua.os.version %>
+                        </div>
+                    </div>
+                    
+                </div> <!-- COLUMN END -->
+            </div> <!-- ROW END -->
+        </div> <!-- CONTAINER END -->
+    </body>
+</html>
