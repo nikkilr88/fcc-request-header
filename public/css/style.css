@@ -1,0 +1,14 @@
+#video {
+    width: 100%;
+    height: 200px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #292b2c;
+    border-bottom: 1px dotted #292b2c;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
