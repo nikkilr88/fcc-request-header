@@ -12,6 +12,10 @@ app.use(indexRoute);
 app.use(whoAmIRoute); 
 app.use(prettyfiedRoute);
 
+app.use(function(req, res, next){
+    res.status(404).render('404-error', {title: "Page not found"});
+});
+
 app.listen(process.env.PORT, function(){
    console.log("Server started"); 
 });
